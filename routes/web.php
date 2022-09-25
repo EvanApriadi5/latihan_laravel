@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\formcontroller;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,7 +15,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('landing-page');
+});
+
+Route::get('/landing-page', function () {
+    return view('landing-page');
 });
 
 Route::get('/index-blade', function () {
@@ -24,3 +29,7 @@ Route::get('/index-blade', function () {
 Route::get('/add-blade', function () {
     return view('driver.add');
 });
+//routing memanggil controller
+Route::get('register', [formcontroller::class,'register']);
+Route::post('register-post', [formcontroller::class,'postdata']);
+
