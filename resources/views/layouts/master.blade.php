@@ -32,6 +32,8 @@
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="{{ url('register') }}">register</a></li>
+            <li><a class="dropdown-item" href="{{ url('luas-persegi-panjang') }}">Luas Persegi Panjang</a></li>
+            <li><a class="dropdown-item" href="{{ url('form-nilai') }}">Hitung Nilai</a></li>
             <li><a class="dropdown-item" href="#">Another action</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#">Something else here</a></li>

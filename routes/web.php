@@ -33,3 +33,8 @@ Route::get('/add-blade', function () {
 Route::get('register', [formcontroller::class,'register']);
 Route::post('register-post', [formcontroller::class,'postdata']);
 
+Route::get('luas-persegi-panjang', [formcontroller::class,'FormLuas']);
+Route::post('luas-persegi-panjang', [formcontroller::class,'HitungLuas']);
+
+Route::get('form-nilai', [formcontroller::class,'Formnilai']);
+Route::post('hitung-nilai', [formcontroller::class,'Hitungnilai']);
